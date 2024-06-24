@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Novo Post</title>
+  </head>
+  <body>
+    <h1>Criar Novo Post</h1>
+    <form action="/posts" method="POST" enctype="multipart/form-data">
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" required />
+
+      <label for="content">Conteúdo:</label>
+      <textarea id="content" name="content" required></textarea>
+
+      <label for="image">Imagem:</label>
+      <input type="file" id="image" name="image" />
+
+      <button type="submit">Salvar</button>
+    </form>
+    <a href="/">Voltar para a lista de posts</a>
+  </body>
+</html>
